@@ -1,8 +1,14 @@
 _default:
     @just --choose
 
-dev: develop
-    bun dev
+build: develop
+    bun run build
+
+preview: develop
+    bun run preview
+
+run: develop
+    bun run dev
 
 todo:
     taskwarrior-tui --taskdata .task
