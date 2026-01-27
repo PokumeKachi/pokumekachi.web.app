@@ -1,0 +1,13 @@
+---
+const { title } = Astro.props;
+---
+<section id={title} class="scroll-mt-[2vh] space-y-[10vh]">
+    <div class="text-[1.5rem] font-[lexend] lowercase tracking-widest opacity-50
+        text-center sticky top-[1vh] z-10
+        portrait:top-[6vh]">
+        {title}
+    </div>
+    <article class="prose prose-neutral font-['Roboto_Mono']">
+        <slot/>
+    </article>
+</section>

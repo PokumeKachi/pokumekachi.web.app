@@ -1,0 +1,17 @@
+:root {
+    --header-h: 6vh;
+    --header-h-portrait: 15vh;
+
+    --header-p-x: 2vw;
+    --header-p-y: 1vh;
+
+    --header-text-big: 4vh;
+    --header-text-medium: 2vh;
+    --header-button-underline: calc(var(--header-text-medium) * 0.2);
+
+    --header-gap: 1vw;
+    --header-gap-portrait: 1vh;
+
+
+    --section-gap: 3rem;
+}

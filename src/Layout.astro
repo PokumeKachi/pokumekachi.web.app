@@ -6,9 +6,11 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Portfolio</title>
 	</head>
-	<body>
+    <body class="pt-[15vh] p-10 max-w-6xl mx-auto
+        flex flex-col justify-start items-stretch gap-[5vh]
+        overflow-x-hidden">
 		<slot />
 	</body>
 </html>
@@ -16,8 +18,7 @@
 <style>
 	html,
 	body {
-		margin: 0;
+        scroll-behavior: smooth;
 		width: 100%;
-		height: 100%;
 	}
 </style>

@@ -1,11 +1,71 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import "../styles/global.css";
+import "../styles/fonts.css";
+import "../styles/sizings.css";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Background from '../components/Background.astro';
+import Topbar from '../components/Topbar.astro';
+import Header from '../components/Header.astro';
+import Navigator from '../components/Navigator.astro';
+
+import TextBlock from '../components/TextBlock.astro';
+
+import { Content as WhoIAm } from '../content/whoiam.md';
+import { Content as WhatIDo } from '../content/whatido.md';
+import { Content as WhatIveDone } from '../content/whativedone.md';
+
+import Layout from '../Layout.astro';
+
 ---
 
 <Layout>
-	<Welcome />
+    <Background />
+    <Topbar />
+	<Header />
+	<Navigator />
+
+    <!-- <TextBlock title="whoiam"> -->
+    <!--     <WhoIAm /> -->
+    <!-- </TextBlock> -->
+    <!---->
+    <!-- <TextBlock title="whatido"> -->
+    <!--     <WhatIDo /> -->
+    <!-- </TextBlock> -->
+    <!---->
+    <!-- <TextBlock title="whativedone"> -->
+    <!--     <WhatIveDone /> -->
+    <!-- </TextBlock> -->
+
+    <script>
+        const bg = document.getElementById("bg");
+        let scrollY = 0;
+        let ticking = false;
+
+        window.addEventListener("scroll", () => {
+            scrollY = window.scrollY;
+            if (!ticking) {
+            requestAnimationFrame(update);
+            ticking = true;
+            }
+        });
+
+        function update() {
+            const t = scrollY * 0.001;
+
+            const tx = 100 * Math.cos(t);
+            const ty = 100 * Math.cos(t);
+            const rx = 20 * Math.sin(t);
+            const ry = 20 * Math.cos(t);
+            const rz = 20 * Math.sin(t);
+
+            bg.style.transform =
+                `translate(${tx}px, ${ty}px)
+                rotateX(${rx}deg)
+                rotateY(${ry}deg)
+                rotateZ(${rz}deg)`;
+
+            ticking = false;
+        }
+    </script>
 </Layout>
+
