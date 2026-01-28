@@ -8,6 +8,7 @@ deploy: build
     firebase deploy
 
 preview: develop
+    bun run build
     bun run preview
 
 run: develop
