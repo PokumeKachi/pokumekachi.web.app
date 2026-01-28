@@ -12,6 +12,11 @@
     --header-gap: 1vw;
     --header-gap-portrait: 1vh;
 
+    --block-text-big: 4vh;
+    --block-text-medium: 1.5vh;
+    --block-p-y: 0.5vh;
+    --block-p-y-portrait: 5vh;
+
 
     --section-gap: 3rem;
 }
