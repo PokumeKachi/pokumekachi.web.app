@@ -2,12 +2,12 @@
 const { title } = Astro.props;
 ---
 <section id={title} class="scroll-mt-[2vh] space-y-[10vh]">
-    <div class="text-[1.5rem] font-[lexend] lowercase tracking-widest opacity-50
-        text-center sticky top-[1vh] z-10
-        portrait:top-[6vh]">
+    <div class="text-[length:var(--block-text-big)] font-[lexend] lowercase tracking-widest opacity-50
+        text-center sticky top-[var(--block-p-y)] z-10
+        portrait:top-[var(--block-p-y-portrait)]">
         {title}
     </div>
-    <article class="prose prose-neutral font-['Roboto_Mono']">
+    <article class="prose prose-neutral text-center text-[length:var(--block-text-medium)] font-['Roboto_Mono']">
         <slot/>
     </article>
 </section>
