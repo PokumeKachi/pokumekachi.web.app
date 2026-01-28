@@ -67,5 +67,29 @@ import Layout from '../Layout.astro';
             ticking = false;
         }
     </script>
-</Layout>
 
+    <script>
+        let y = window.scrollY, pending = 0;
+        const step = 0.5;
+
+        addEventListener("wheel", e => {
+            if (Math.abs(e.deltaY) < 100) return;
+            e.preventDefault();
+            pending += e.deltaY * step;
+        }, { passive: false });
+
+        function tick(){
+            if (pending !== 0) {
+                const max =
+                    document.documentElement.scrollHeight - window.innerHeight;
+
+                y += pending;
+                pending = 0;
+                y = Math.min(Math.max(y, 0), max);
+                window.scrollTo(0, y);
+            }
+            requestAnimationFrame(tick);
+        }
+        tick();
+    </script>
+</Layout>
