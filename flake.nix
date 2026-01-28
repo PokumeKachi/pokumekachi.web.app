@@ -1,6 +1,6 @@
 {
     description = "description";
-    inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
     outputs =
         { self, nixpkgs }:
         let
@@ -16,6 +16,9 @@
                     ];
                     tools = with pkgs; [
                         bun
+                        re2
+                        firebase-tools
+                        nodejs_20
                     ];
                     common = {
                         buildInputs = libs;

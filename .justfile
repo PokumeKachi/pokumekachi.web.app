@@ -4,6 +4,9 @@ _default:
 build: develop
     bun run build
 
+deploy: build
+    firebase deploy
+
 preview: develop
     bun run preview
 
