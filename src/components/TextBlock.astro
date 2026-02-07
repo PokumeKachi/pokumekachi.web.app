@@ -1,18 +1,39 @@
 ---
 const { title } = Astro.props;
 ---
-<section id={title} class="scroll-mt-[var(--block-p-y)] space-y-[10vh]">
+<section id={title} class="scroll-mt-[var(--scroll-margin)] portrait:scroll-mt-[var(--scroll-margin-portrait)] space-y-[10vh]">
     <div class="text-[length:var(--block-text-big)] font-[lexend]
         lowercase tracking-widest opacity-50 text-red-900
         text-center sticky top-[var(--block-p-y)] z-10
         portrait:top-[var(--block-p-y-portrait)]">
-        {title}
+        |{title}|
     </div>
     <article class="prose prose-neutral
         prose-a:text-blue-700
-        leading-tight text-[length:var(--block-text-medium)] font-['Roboto_Mono']">
+        prose-a:no-underline
+
+        prose-a:relative
+        prose-a:inline-block
+
+        prose-a:after:content-['']
+        prose-a:after:absolute
+        prose-a:after:left-0
+        prose-a:after:-bottom-1
+        prose-a:after:h-[var(--link-underline)]
+        prose-a:after:w-full
+        prose-a:after:bg-current
+        prose-a:after:origin-left
+        prose-a:after:scale-x-0
+        prose-a:after:transition-transform
+        prose-a:after:duration-100
+
+        prose-a:hover:after:scale-x-100
+        leading-tight text-[length:var(--block-text-medium)] font-sans">
         <slot/>
     </article>
+
+    <div class="h-[50vh]">
+    </div>
 </section>
 
 <style>
@@ -20,4 +41,5 @@ const { title } = Astro.props;
         margin-left: auto;
         margin-right: auto;
     }
+
 </style>

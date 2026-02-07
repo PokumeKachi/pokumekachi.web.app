@@ -78,6 +78,10 @@ import Layout from '../Layout.astro';
             pending += e.deltaY * step;
         }, { passive: false });
 
+        addEventListener("scroll", () => {
+            if (pending === 0) y = window.scrollY;
+        });
+
         function tick(){
             if (pending !== 0) {
                 const max =
