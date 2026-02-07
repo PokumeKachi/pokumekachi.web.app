@@ -12,15 +12,15 @@
     --header-gap: 1vw;
     --header-gap-portrait: 1vh;
 
-    --block-text-big: 5vh;
+    --block-text-big: 3vh;
     --block-text-medium: 1.5vh;
     --block-p-y: 0.5vh;
     --block-p-y-portrait: 5vh;
 
     --link-underline: calc(var(--block-text-medium) * 0.2);
 
-    --scroll-margin: calc(var(--header-h) - var(--block-text-big) - var(--block-p-y));
-    --scroll-margin-portrait: calc(var(--header-h-portrait) - var(--block-text-big) - var(--block-p-y-portrait));
+    --scroll-margin: calc(var(--header-h));
+    --scroll-margin-portrait: calc(var(--header-h-portrait));
 
     --section-gap: 3rem;
 }

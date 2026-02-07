@@ -20,9 +20,6 @@ import Layout from '../Layout.astro';
 
 <Layout>
     <Background />
-    <Topbar />
-	<Header />
-	<Navigator />
 
     <TextBlock title="whoiam">
         <WhoIAm />
@@ -35,6 +32,10 @@ import Layout from '../Layout.astro';
     <TextBlock title="whativedone">
         <WhatIveDone />
     </TextBlock>
+
+    <Topbar />
+	<Header />
+	<Navigator />
 
     <script>
         const bg = document.getElementById("bg");
