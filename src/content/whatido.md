@@ -71,18 +71,18 @@
 # Roles
 
 - **Full-stack Web**:
-    * Ultra-performance web solutions on [Actix](https://actix.rs) (Back-end) and [HTMX](https://htmx.org/) (Front-end).
-    * Industry standard ultra-rapid prototyping apps with [NodeJS](https://nodejs.org) and [React](https://react.dev) (Front-end).
-    * Well-integrated full-stack codebase using [SvelteKit](https://svelte.dev) (Full-stack).
-    * Supporting tools: [Tailwind CSS](https://tailwindcss.com), [Bootstrap](https://getbootstrap.com), [PostCSS](https://postcss.org), [PostgreSQL](https://www.postgresql.org), [MongoDB](https://www.mongodb.com), [Redis](https://redis.io), [Nginx](https://nginx.org), [Caddy](https://caddyserver.com), [Podman](https://podman.io), [Docker](https://www.docker.com).
+    - Ultra-performance web solutions on [Actix](https://actix.rs) (Back-end) and [HTMX](https://htmx.org/) (Front-end).
+    - Industry standard ultra-rapid prototyping apps with [NodeJS](https://nodejs.org) and [React](https://react.dev) (Front-end).
+    - Well-integrated full-stack codebase using [SvelteKit](https://svelte.dev) (Full-stack).
+    - Supporting tools: [Tailwind CSS](https://tailwindcss.com), [Bootstrap](https://getbootstrap.com), [PostCSS](https://postcss.org), [PostgreSQL](https://www.postgresql.org), [MongoDB](https://www.mongodb.com), [Redis](https://redis.io), [Nginx](https://nginx.org), [Caddy](https://caddyserver.com), [Podman](https://podman.io), [Docker](https://www.docker.com).
 
 - **Native Applications**:
-    * Reactive quick-to-prototype apps with [Flutter](https://flutter.dev).
-    * Native-performance applications with [Qt](https://www.qt.io)/[GTK](https://gtk-rs.org).
-    * Minimal yet high performance TUI applications with [Ratatui](https://ratatui.rs)/[Textual](https://textual.textualize.io).
+    - Reactive quick-to-prototype apps with [Flutter](https://flutter.dev).
+    - Native-performance applications with [Qt](https://www.qt.io)/[GTK](https://gtk-rs.org).
+    - Minimal yet high performance TUI applications with [Ratatui](https://ratatui.rs)/[Textual](https://textual.textualize.io).
 
 - **Sysadmin**:
-    * Strong Linux systems knowledge. ([NixOS](https://nixos.org), [Arch Linux](https://archlinux.org), [Debian](https://debian.org), [Ubuntu Server](https://ubuntu.com/server))
-    * Experienced with [Nix](https://nix.dev) for declarative, reproducible environments.
-    * Containerized deployments using [Podman](https://podman.io) and [Docker](https://docker.com).
-    * Secure self-hosting and operational management.
+    - Strong Linux systems knowledge. ([NixOS](https://nixos.org), [Arch Linux](https://archlinux.org), [Debian](https://debian.org), [Ubuntu Server](https://ubuntu.com/server))
+    - Experienced with [Nix](https://nix.dev) for declarative, reproducible environments.
+    - Containerized deployments using [Podman](https://podman.io) and [Docker](https://docker.com).
+    - Secure self-hosting and operational management.
