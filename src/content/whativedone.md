@@ -29,3 +29,9 @@
 - Powered by [Astro.js](https://astro.build) and [Tailwind CSS](https://tailwindcss.com).
 - [Open-sourced on GitHub.](https://github.com/PokumeKachi/pokumekachi.web.app)
 - [Deployed on the Firebase Platform.](https://pokumekachi.web.app)
+
+# Linux (2023 - Now)
+
+- Debian (August 2023 - December 2023)
+- Arch Linux (December 2023 - May 2025)
+- NixOS (May 2025 - Feb 2026)
